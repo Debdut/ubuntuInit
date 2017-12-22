@@ -5,14 +5,13 @@ sudo add-apt-repository ppa:hvr/ghc
 sudo add-apt-repository ppa:plt/racket
 sudo add-apt-repository ppa:libreoffice/ppa
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5
-echo "deb http://download.onlyoffice.com/repo/debian squeeze main" >> file
+sudo echo "deb http://download.onlyoffice.com/repo/debian squeeze main" >> /etc/apt/sources.list.d/onlyoffice.list
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository ppa:mozillateam/firefox-next
 sudo add-apt-repository ppa:webupd8team/atom
 sudo add-apt-repository ppa:webupd8team/brackets
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository ppa:kelleyk/emacs
-sudo add-apt-repository ppa:saiarcot895/chromium-dev
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo add-apt-repository ppa:brightbox/ruby-ng
 sudo wget -O - https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key | sudo apt-key add -
@@ -28,3 +27,4 @@ sudo apt install nodejs php7.0 ruby-full haskell-platform python-pip python3-pip
 sudo apt autoremove
 sudo apt upgrade
 sudo chsh -s /bin/zsh
+reboot
