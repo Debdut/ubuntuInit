@@ -5,6 +5,4 @@ curl https://sh.rustup.rs -sSf | sh
 echo "screenfetch" >> .zshrc
 apm install atom-live-server atom-beautify script teletype file-icons language-babel atom-ide-ui ide-typescript ide-flowtype ide-python
 pip3 install ipython jupyter
-wget "https://raw.githubusercontent.com/todylu/monaco.ttf/master/monaco.ttf"
-mkdir .fonts
-mv monaco.ttf .fonts/
+git clone https://github.com/Debdut/programming-fonts.git .fonts
